@@ -398,6 +398,7 @@ For questions, suggestions, or collaboration inquiries:
   - Institution: Faculty of Science and Technology, RMUTK, Thailand
 
 - **Chattabhorn Tritham** (Co-Author, Software Engineer)
+  - Email: memodia@live.com
   - Institution: Thammasat School of Engineering (TSE), Thammasat University, Thailand
   - ORCID: [0009-0003-2408-7374](https://orcid.org/0009-0003-2408-7374)
 
