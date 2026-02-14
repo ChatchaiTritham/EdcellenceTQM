@@ -387,11 +387,6 @@ For questions, suggestions, or collaboration inquiries:
 
 ## Acknowledgments
 
-This work was supported by:
-- National Institute of Standards and Technology (NIST) Baldrige Performance Excellence Program
-- Thailand Education and Training Quality Assurance Association (TETQA)
-- Rajamangala University of Technology Krungthep Research Fund
-
 Special thanks to 18 participating departments and 54 trained assessors who contributed to the empirical validation study.
 
 ## Version History

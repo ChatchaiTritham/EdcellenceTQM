@@ -180,7 +180,7 @@ Upload in this order:
 - [ ] All author ORCID IDs provided
 - [ ] Keywords match manuscript
 - [ ] Abstract matches manuscript
-- [ ] Funding information (if applicable)
+- [x] Funding information: Not applicable (no external funding)
 
 ### **Step 5: Review and Submit**
 
@@ -293,7 +293,8 @@ Before clicking "Submit":
 - [ ] ✅ Code repository uploaded to GitHub
 - [ ] ✅ All co-authors approved submission
 - [ ] ✅ Conflicts of interest disclosed
-- [ ] ✅ Funding acknowledged (if applicable)
+- [x] ✅ Funding: Not applicable (no external funding)
+- [x] ✅ IRB approval: Not required (no human subjects research)
 
 ---
 
