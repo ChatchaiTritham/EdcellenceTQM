@@ -259,5 +259,4 @@ Before submission, verify:
 ---
 
 **Date:** 2026-02-14
-**Prepared by:** Claude Sonnet 4.5
 **Repository:** D:\2026-Journal\Rung\GitHub\EdcellenceTQM

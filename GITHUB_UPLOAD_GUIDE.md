@@ -111,8 +111,6 @@ Publication-ready for:
 - JKSU-CIS manuscript submission
 - IEEE Transactions journals
 - Springer/Nature publications
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 EOF
 )"
 ```
