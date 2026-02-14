@@ -352,7 +352,7 @@ If you use this framework in academic research, please cite:
 ```bibtex
 @article{edcellence2026,
   title={Computational Transformation of Educational Excellence Assessment: ADLI-LeTCI Integration Framework with Empirical Validation},
-  author={Anonymized for Review},
+  author={Saosing, Rungtiva and Tritham, Chatchai and Kamlangkla, Kanchit and Tritham, Chattabhorn},
   journal={Journal of King Saud University - Computer and Information Sciences},
   year={2026},
   volume={Submitted},
@@ -381,9 +381,25 @@ Copyright (c) 2026 Rajamangala University of Technology Krungthep
 
 For questions, suggestions, or collaboration inquiries:
 
-- **Institution**: Rajamangala University of Technology Krungthep (RMUTK)
-- **Department**: Quality Assurance and Educational Standards
-- **Email**: Contact information will be revealed upon manuscript acceptance
+**Corresponding Author:**
+- **Name**: Chatchai Tritham
+- **Email**: chatchait66@nu.ac.th
+- **Institution**: Faculty of Science and Technology, Rajamangala University of Technology Krungthep, Thailand
+- **ORCID**: [0000-0001-7899-228X](https://orcid.org/0000-0001-7899-228X)
+
+**Authors:**
+- **Rungtiva Saosing** (First Author)
+  - Email: rungtiva.s@mail.rmutt.ac.th
+  - Institution: Faculty of Science and Technology, RMUTK, Thailand
+  - ORCID: [0009-0007-8713-8190](https://orcid.org/0009-0007-8713-8190)
+
+- **Kanchit Kamlangkla** (Co-Author)
+  - Email: kanchit.k@mail.rmutk.ac.th
+  - Institution: Faculty of Science and Technology, RMUTK, Thailand
+
+- **Chattabhorn Tritham** (Co-Author, Software Engineer)
+  - Institution: Thammasat School of Engineering (TSE), Thammasat University, Thailand
+  - ORCID: [0009-0003-2408-7374](https://orcid.org/0009-0003-2408-7374)
 
 ## Acknowledgments
 

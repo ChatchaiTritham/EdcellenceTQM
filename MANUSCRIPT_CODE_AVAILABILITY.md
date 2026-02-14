@@ -64,7 +64,8 @@ The framework is implemented as open-source software
 
 ```bibtex
 @misc{edcellence2026code,
-  author       = {Anonymized for Review},
+  author       = {Saosing, Rungtiva and Tritham, Chatchai and
+                  Kamlangkla, Kanchit and Tritham, Chattabhorn},
   title        = {{EdcellenceTQM}: Computational Framework for Educational
                   Excellence Assessment},
   year         = {2026},
@@ -81,7 +82,8 @@ The framework is implemented as open-source software
 @article{edcellence2026,
   title   = {Computational Transformation of Educational Excellence Assessment:
              ADLI-LeTCI Integration Framework with Empirical Validation},
-  author  = {Anonymized for Review},
+  author  = {Saosing, Rungtiva and Tritham, Chatchai and
+             Kamlangkla, Kanchit and Tritham, Chattabhorn},
   journal = {Journal of King Saud University - Computer and Information Sciences},
   year    = {2026},
   volume  = {TBD},
