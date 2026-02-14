@@ -3,6 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-blue.svg)](https://www.postgresql.org/)
+[![Figures: 15](https://img.shields.io/badge/figures-15%20publication--ready-brightgreen.svg)](figures/publication/)
+[![DPI: 300](https://img.shields.io/badge/resolution-300%20DPI-blue.svg)](figures/publication/)
+[![IEEE](https://img.shields.io/badge/compliant-IEEE%2FSpringer-red.svg)](figures/publication/)
 
 **EdcellenceTQM** is a computational implementation of the Baldrige Excellence Framework for higher education quality assessment, featuring integrated ADLI-LeTCI scoring algorithms with empirical validation from a 12-month longitudinal study.
 
@@ -14,6 +17,81 @@ This framework transforms qualitative Total Quality Management (TQM) assessment 
 - **Integration Analytics**: Cross-category Integration Health Index (IHI) for detecting organizational silos
 - **Evidence-Based Prioritization**: Gap-based priority scoring combining performance gaps, point values, and deployment urgency
 - **Multi-Framework Compatibility**: Mappings between Baldrige, EdPEx, TQF, and AUN-QA frameworks
+- **Publication-Quality Visualizations**: IEEE/Springer-compliant figures (300 DPI, Type-2 embedded fonts)
+
+## Publication-Quality Visualizations
+
+This framework includes **8 publication-ready visualization functions** generating IEEE/Springer-compliant figures for academic manuscripts:
+
+### Available Visualizations
+
+| Figure | Type | Description | Formats |
+|--------|------|-------------|---------|
+| **ADLI Radar** | 2D Polar | Process maturity profile across 4 dimensions | PNG, PDF |
+| **LeTCI Radar** | 2D Polar | Results assessment across 4 dimensions | PNG, PDF |
+| **Category Scores** | Bar Chart | Performance across 7 Baldrige categories | PNG, PDF |
+| **IHI Trajectory** | Time Series | Integration health trends over time | PNG, PDF |
+| **Gap Priority** | 3D Scatter | Interactive priority matrix (gap × impact × urgency) | HTML |
+| **Scalability** | Dual Panel | Multi-department growth analysis | PNG, PDF |
+| **Heatmap** | Matrix | Category correlation and integration patterns | PNG, PDF |
+| **Effect Sizes** | Forest Plot | Statistical significance with confidence intervals | PNG, PDF |
+
+### Technical Specifications
+
+✅ **IEEE/Springer Compliance:**
+- **Resolution**: 300 DPI (minimum for publication)
+- **Column Widths**: 3.5" (single), 7.0" (double)
+- **Fonts**: Times New Roman 10pt serif, 8pt legends
+- **PDF**: Type-2 TrueType embedded fonts (`pdf.fonttype=42`)
+- **Colors**: Wong 2011 colorblind-safe palette
+- **Layout**: Constrained layout with 28 anti-overlap features
+
+### Sample Figures
+
+All publication figures are available in [`figures/publication/`](figures/publication/):
+
+```
+figures/publication/
+├── fig1a_adli_radar.png         (142 KB, 300 DPI)
+├── fig1a_adli_radar.pdf         (48 KB, Type-2 fonts)
+├── fig1b_letci_radar.png        (148 KB, 300 DPI)
+├── fig1b_letci_radar.pdf        (48 KB, Type-2 fonts)
+├── fig2_category_scores.png     (109 KB, 300 DPI)
+├── fig2_category_scores.pdf     (57 KB, Type-2 fonts)
+├── fig3_ihi_trajectory.png      (145 KB, 300 DPI)
+├── fig3_ihi_trajectory.pdf      (53 KB, Type-2 fonts)
+├── fig4_gap_priority.html       (4.7 MB, interactive Plotly)
+├── fig5_scalability.png         (162 KB, 300 DPI)
+├── fig5_scalability.pdf         (54 KB, Type-2 fonts)
+├── fig6_heatmap.png             (107 KB, 300 DPI)
+├── fig6_heatmap.pdf             (55 KB, Type-2 fonts)
+├── fig7_effect_sizes.png        (111 KB, 300 DPI)
+└── fig7_effect_sizes.pdf        (58 KB, Type-2 fonts)
+```
+
+### Generate Figures
+
+Run [`notebooks/08_Publication_Figures.ipynb`](notebooks/08_Publication_Figures.ipynb) to regenerate all figures:
+
+```bash
+jupyter notebook notebooks/08_Publication_Figures.ipynb
+# All figures will be saved to figures/publication/
+```
+
+Or use the visualization API directly:
+
+```python
+from src.visualizations import plot_adli_radar, save_figure
+
+# Generate ADLI radar chart
+scores = {'Approach': 0.80, 'Deployment': 0.70,
+          'Learning': 0.65, 'Integration': 0.75}
+fig = plot_adli_radar(scores, title='Department X ADLI Profile')
+
+# Save in publication formats
+save_figure(fig, 'output/my_figure', formats=['png', 'pdf'])
+# Creates: my_figure.png (300 DPI) + my_figure.pdf (Type-2 fonts)
+```
 
 ## Architecture
 
@@ -23,7 +101,7 @@ This framework transforms qualitative Total Quality Management (TQM) assessment 
 EdcellenceTQM/
 ├── src/
 │   ├── adli_letci_core.py         # Core assessment algorithms (6 equations)
-│   └── visualizations.py          # Radar charts, 3D matrices, IHI trajectories
+│   └── visualizations.py          # 8 publication-quality chart functions (995 lines)
 ├── database/
 │   └── schema_simplified.sql      # 20-table PostgreSQL schema (scalable to 138)
 ├── notebooks/
@@ -34,7 +112,16 @@ EdcellenceTQM/
 │   ├── 05_Gap_Prioritization.ipynb
 │   ├── 06_Integration_Health.ipynb
 │   ├── 07_Scalability_Benchmarks.ipynb
-│   └── 08_Publication_Figures.ipynb
+│   └── 08_Publication_Figures.ipynb  # Generate all manuscript figures
+├── figures/publication/           # 15 IEEE/Springer-compliant figures
+│   ├── fig1a_adli_radar.png      # 300 DPI PNG + Type-2 PDF
+│   ├── fig1b_letci_radar.png
+│   ├── fig2_category_scores.png
+│   ├── fig3_ihi_trajectory.png
+│   ├── fig4_gap_priority.html    # Interactive 3D (Plotly)
+│   ├── fig5_scalability.png
+│   ├── fig6_heatmap.png
+│   └── fig7_effect_sizes.png
 ├── data/examples/
 │   ├── sample_assessment_data.csv
 │   ├── benchmark_results.csv
@@ -226,20 +313,28 @@ This framework was validated through a 12-month longitudinal study (March 2023 -
 
 ## Jupyter Notebooks
 
-Interactive analysis notebooks are provided in `notebooks/`:
+Interactive analysis notebooks are provided in [`notebooks/`](notebooks/):
 
-1. **01_QuickStart.ipynb**: Basic assessment workflow and examples
-2. **02_ADLI_Analysis.ipynb**: Process assessment with dimensional radar charts
-3. **03_LeTCI_Results.ipynb**: Results analysis and trend visualization
-4. **04_Organizational_Assessment.ipynb**: Complete scoring pipeline
-5. **05_Gap_Prioritization.ipynb**: 3D priority matrices (gap × impact × urgency)
-6. **06_Integration_Health.ipynb**: IHI trajectory plots and silo detection
-7. **07_Scalability_Benchmarks.ipynb**: Performance testing (2D/3D charts)
-8. **08_Publication_Figures.ipynb**: All manuscript figures with reproduction code
+1. **[01_QuickStart.ipynb](notebooks/01_QuickStart.ipynb)**: Basic assessment workflow and examples
+2. **[02_ADLI_Analysis.ipynb](notebooks/02_ADLI_Analysis.ipynb)**: Process assessment with dimensional radar charts
+3. **[03_LeTCI_Results.ipynb](notebooks/03_LeTCI_Results.ipynb)**: Results analysis and trend visualization
+4. **[04_Organizational_Assessment.ipynb](notebooks/04_Organizational_Assessment.ipynb)**: Complete scoring pipeline
+5. **[05_Gap_Prioritization.ipynb](notebooks/05_Gap_Prioritization.ipynb)**: 3D priority matrices (gap × impact × urgency)
+6. **[06_Integration_Health.ipynb](notebooks/06_Integration_Health.ipynb)**: IHI trajectory plots and silo detection
+7. **[07_Scalability_Benchmarks.ipynb](notebooks/07_Scalability_Benchmarks.ipynb)**: Performance testing (2D/3D charts)
+8. **[08_Publication_Figures.ipynb](notebooks/08_Publication_Figures.ipynb)**: ⭐ **Generate all 15 manuscript figures** (300 DPI, IEEE/Springer compliant)
+
+### Quick Start
 
 Launch notebooks:
 ```bash
 jupyter notebook notebooks/
+```
+
+Generate all publication figures:
+```bash
+jupyter notebook notebooks/08_Publication_Figures.ipynb
+# Run all cells → figures saved to figures/publication/
 ```
 
 ## API Reference
