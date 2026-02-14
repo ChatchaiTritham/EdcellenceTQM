@@ -1,0 +1,6 @@
+department_count,response_time_sec,memory_mb,cpu_percent
+10,0.82,145,12.3
+25,1.23,198,18.7
+50,1.87,256,25.4
+100,2.54,328,34.2
+200,3.89,445,48.6

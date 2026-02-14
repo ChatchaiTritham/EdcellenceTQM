@@ -1,0 +1,238 @@
+{
+  "assessment_cycle": "2024-02",
+  "institution": "Rajamangala University of Technology Krungthep",
+  "departments": [
+    {
+      "department_id": 1,
+      "department_name": "Computer Science",
+      "department_code": "CS",
+      "organizational_score": 88.2,
+      "maturity_level": 5,
+      "maturity_label": "Role Model",
+      "ihi_score": 0.91,
+      "category_scores": {
+        "Leadership": 85.5,
+        "Strategy": 82.3,
+        "Customers": 84.7,
+        "Measurement": 92.1,
+        "Workforce": 78.6,
+        "Operations": 87.4,
+        "Results": 91.8
+      },
+      "top_priorities": [
+        {
+          "item_id": "5.1",
+          "item_description": "Workforce Capability and Capacity",
+          "current_score": 78.6,
+          "gap_score": 21.4,
+          "priority_score": 856.0,
+          "priority_rank": 1
+        },
+        {
+          "item_id": "2.1",
+          "item_description": "Strategy Development",
+          "current_score": 82.3,
+          "gap_score": 17.7,
+          "priority_score": 708.0,
+          "priority_rank": 2
+        },
+        {
+          "item_id": "3.2",
+          "item_description": "Customer Engagement",
+          "current_score": 84.7,
+          "gap_score": 15.3,
+          "priority_score": 688.5,
+          "priority_rank": 3
+        }
+      ]
+    },
+    {
+      "department_id": 2,
+      "department_name": "Business Administration",
+      "department_code": "BA",
+      "organizational_score": 83.0,
+      "maturity_level": 4,
+      "maturity_label": "Integrated",
+      "ihi_score": 0.86,
+      "category_scores": {
+        "Leadership": 80.2,
+        "Strategy": 78.5,
+        "Customers": 81.3,
+        "Measurement": 88.4,
+        "Workforce": 73.8,
+        "Operations": 82.6,
+        "Results": 87.2
+      },
+      "top_priorities": [
+        {
+          "item_id": "5.1",
+          "item_description": "Workforce Capability and Capacity",
+          "current_score": 73.8,
+          "gap_score": 26.2,
+          "priority_score": 1048.0,
+          "priority_rank": 1
+        },
+        {
+          "item_id": "2.1",
+          "item_description": "Strategy Development",
+          "current_score": 78.5,
+          "gap_score": 21.5,
+          "priority_score": 860.0,
+          "priority_rank": 2
+        },
+        {
+          "item_id": "1.2",
+          "item_description": "Governance and Societal Contributions",
+          "current_score": 80.2,
+          "gap_score": 19.8,
+          "priority_score": 990.0,
+          "priority_rank": 3
+        }
+      ]
+    },
+    {
+      "department_id": 3,
+      "department_name": "Engineering",
+      "department_code": "ENG",
+      "organizational_score": 97.2,
+      "maturity_level": 5,
+      "maturity_label": "Role Model",
+      "ihi_score": 0.98,
+      "category_scores": {
+        "Leadership": 96.5,
+        "Strategy": 94.8,
+        "Customers": 95.2,
+        "Measurement": 98.7,
+        "Workforce": 92.3,
+        "Operations": 97.8,
+        "Results": 98.5
+      },
+      "top_priorities": [
+        {
+          "item_id": "5.1",
+          "item_description": "Workforce Capability and Capacity",
+          "current_score": 92.3,
+          "gap_score": 7.7,
+          "priority_score": 308.0,
+          "priority_rank": 1
+        },
+        {
+          "item_id": "2.1",
+          "item_description": "Strategy Development",
+          "current_score": 94.8,
+          "gap_score": 5.2,
+          "priority_score": 208.0,
+          "priority_rank": 2
+        },
+        {
+          "item_id": "3.1",
+          "item_description": "Customer Expectations",
+          "current_score": 95.2,
+          "gap_score": 4.8,
+          "priority_score": 192.0,
+          "priority_rank": 3
+        }
+      ]
+    },
+    {
+      "department_id": 4,
+      "department_name": "Electrical Technology",
+      "department_code": "ET",
+      "organizational_score": 76.4,
+      "maturity_level": 4,
+      "maturity_label": "Integrated",
+      "ihi_score": 0.78,
+      "category_scores": {
+        "Leadership": 73.8,
+        "Strategy": 71.2,
+        "Customers": 74.5,
+        "Measurement": 82.6,
+        "Workforce": 68.9,
+        "Operations": 76.3,
+        "Results": 80.1
+      },
+      "top_priorities": [
+        {
+          "item_id": "5.1",
+          "item_description": "Workforce Capability and Capacity",
+          "current_score": 68.9,
+          "gap_score": 31.1,
+          "priority_score": 1244.0,
+          "priority_rank": 1
+        },
+        {
+          "item_id": "2.1",
+          "item_description": "Strategy Development",
+          "current_score": 71.2,
+          "gap_score": 28.8,
+          "priority_score": 1152.0,
+          "priority_rank": 2
+        },
+        {
+          "item_id": "1.1",
+          "item_description": "Senior Leadership",
+          "current_score": 73.8,
+          "gap_score": 26.2,
+          "priority_score": 1834.0,
+          "priority_rank": 3
+        }
+      ]
+    },
+    {
+      "department_id": 5,
+      "department_name": "Architecture",
+      "department_code": "ARCH",
+      "organizational_score": 71.8,
+      "maturity_level": 4,
+      "maturity_label": "Integrated",
+      "ihi_score": 0.73,
+      "category_scores": {
+        "Leadership": 69.5,
+        "Strategy": 66.8,
+        "Customers": 70.2,
+        "Measurement": 77.3,
+        "Workforce": 64.1,
+        "Operations": 72.6,
+        "Results": 75.8
+      },
+      "top_priorities": [
+        {
+          "item_id": "5.1",
+          "item_description": "Workforce Capability and Capacity",
+          "current_score": 64.1,
+          "gap_score": 35.9,
+          "priority_score": 1436.0,
+          "priority_rank": 1
+        },
+        {
+          "item_id": "2.1",
+          "item_description": "Strategy Development",
+          "current_score": 66.8,
+          "gap_score": 33.2,
+          "priority_score": 1328.0,
+          "priority_rank": 2
+        },
+        {
+          "item_id": "1.1",
+          "item_description": "Senior Leadership",
+          "current_score": 69.5,
+          "gap_score": 30.5,
+          "priority_score": 2135.0,
+          "priority_rank": 3
+        }
+      ]
+    }
+  ],
+  "summary_statistics": {
+    "mean_organizational_score": 83.32,
+    "std_organizational_score": 10.15,
+    "mean_ihi_score": 0.852,
+    "std_ihi_score": 0.098,
+    "departments_at_level_5": 2,
+    "departments_at_level_4": 3,
+    "departments_below_level_4": 0,
+    "common_top_priority": "5.1 - Workforce Capability and Capacity",
+    "highest_scoring_category": "Measurement",
+    "lowest_scoring_category": "Workforce"
+  }
+}

@@ -13,7 +13,7 @@ This module implements 6 primary assessment equations:
 5. Integration Health Index (Equation 5)
 6. Gap-Based Prioritization (Equation 6)
 
-Author: [To be revealed upon acceptance]
+Authors: Rajamangala University of Technology Krungthep Research Team
 License: MIT
 Version: 1.0.0
 """
@@ -449,6 +449,56 @@ class AssessmentEngine:
         self.adli_weights = adli_weights
         self.letci_weights = letci_weights
         self.category_weights = category_weights
+        self.process_items = {}
+        self.results_items = {}
+
+    def add_process_item(self, item_id: str, indicators: ADLIIndicators, point_value: int):
+        """Add a process item to the assessment."""
+        score = compute_adli_score(indicators, weights=self.adli_weights)
+        self.process_items[item_id] = {
+            'score': score,
+            'points': point_value,
+            'indicators': indicators
+        }
+
+    def add_results_item(self, item_id: str, indicators: LeTCIIndicators, point_value: int):
+        """Add a results item to the assessment."""
+        score = compute_letci_score(indicators, weights=self.letci_weights)
+        self.results_items[item_id] = {
+            'score': score,
+            'points': point_value,
+            'indicators': indicators
+        }
+
+    def compute_organizational_score(self) -> float:
+        """Compute organizational score from added items."""
+        # Aggregate all process and results scores
+        all_scores = []
+        all_points = []
+
+        for item in self.process_items.values():
+            all_scores.append(item['score'])
+            all_points.append(item['points'])
+
+        for item in self.results_items.values():
+            all_scores.append(item['score'])
+            all_points.append(item['points'])
+
+        if not all_scores:
+            return 0.0
+
+        # Weighted average
+        return sum(s * p for s, p in zip(all_scores, all_points)) / sum(all_points)
+
+    def compute_ihi(self) -> float:
+        """Compute Integration Health Index from added items."""
+        process_integration = [item['indicators'].integration for item in self.process_items.values()]
+        results_integration = [item['indicators'].integration for item in self.results_items.values()]
+
+        if not process_integration and not results_integration:
+            return 0.0
+
+        return compute_integration_health_index(process_integration, results_integration)
 
     def compute_organizational_assessment(
         self,
@@ -567,7 +617,7 @@ class AssessmentEngine:
 # ============================================================================
 
 __version__ = '1.0.0'
-__author__ = '[To be revealed upon acceptance]'
+__author__ = 'RMUTK Quality Assurance Research Team'
 __license__ = 'MIT'
 __all__ = [
     'ADLIIndicators',

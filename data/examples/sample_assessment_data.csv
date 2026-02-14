@@ -1,0 +1,49 @@
+item_id,category,item_type,point_value,approach,deployment,learning,integration,level,trend,comparison,department,assessment_date
+1.1,Leadership,Process,70,0.80,0.75,0.70,0.80,,,,,Computer Science,2024-02-01
+1.2,Leadership,Process,50,0.75,0.70,0.65,0.75,,,,,Computer Science,2024-02-01
+2.1,Strategy,Process,40,0.70,0.65,0.60,0.70,,,,,Computer Science,2024-02-01
+2.2,Strategy,Process,45,0.72,0.68,0.62,0.72,,,,,Computer Science,2024-02-01
+3.1,Customers,Process,40,0.68,0.70,0.58,0.68,,,,,Computer Science,2024-02-01
+3.2,Customers,Process,45,0.70,0.72,0.60,0.70,,,,,Computer Science,2024-02-01
+4.1,Measurement,Process,45,0.82,0.78,0.75,0.82,,,,,Computer Science,2024-02-01
+4.2,Measurement,Process,45,0.80,0.76,0.72,0.80,,,,,Computer Science,2024-02-01
+5.1,Workforce,Process,40,0.65,0.60,0.55,0.65,,,,,Computer Science,2024-02-01
+5.2,Workforce,Process,45,0.68,0.62,0.58,0.68,,,,,Computer Science,2024-02-01
+6.1,Operations,Process,50,0.78,0.75,0.70,0.78,,,,,Computer Science,2024-02-01
+6.2,Operations,Process,50,0.76,0.72,0.68,0.76,,,,,Computer Science,2024-02-01
+7.1,Results,Results,120,,,,,0.85,0.80,0.75,0.85,Computer Science,2024-02-01
+7.2,Results,Results,80,,,,,0.82,0.78,0.72,0.82,Computer Science,2024-02-01
+7.3,Results,Results,80,,,,,0.80,0.76,0.70,0.80,Computer Science,2024-02-01
+7.4,Results,Results,80,,,,,0.78,0.74,0.68,0.78,Computer Science,2024-02-01
+1.1,Leadership,Process,70,0.75,0.70,0.65,0.75,,,,,Business Admin,2024-02-01
+1.2,Leadership,Process,50,0.70,0.65,0.60,0.70,,,,,Business Admin,2024-02-01
+2.1,Strategy,Process,40,0.65,0.60,0.55,0.65,,,,,Business Admin,2024-02-01
+2.2,Strategy,Process,45,0.68,0.63,0.58,0.68,,,,,Business Admin,2024-02-01
+3.1,Customers,Process,40,0.72,0.68,0.62,0.72,,,,,Business Admin,2024-02-01
+3.2,Customers,Process,45,0.74,0.70,0.64,0.74,,,,,Business Admin,2024-02-01
+4.1,Measurement,Process,45,0.78,0.74,0.68,0.78,,,,,Business Admin,2024-02-01
+4.2,Measurement,Process,45,0.76,0.72,0.66,0.76,,,,,Business Admin,2024-02-01
+5.1,Workforce,Process,40,0.60,0.55,0.50,0.60,,,,,Business Admin,2024-02-01
+5.2,Workforce,Process,45,0.62,0.58,0.52,0.62,,,,,Business Admin,2024-02-01
+6.1,Operations,Process,50,0.70,0.68,0.62,0.70,,,,,Business Admin,2024-02-01
+6.2,Operations,Process,50,0.72,0.70,0.64,0.72,,,,,Business Admin,2024-02-01
+7.1,Results,Results,120,,,,,0.80,0.75,0.70,0.80,Business Admin,2024-02-01
+7.2,Results,Results,80,,,,,0.78,0.72,0.68,0.78,Business Admin,2024-02-01
+7.3,Results,Results,80,,,,,0.75,0.70,0.65,0.75,Business Admin,2024-02-01
+7.4,Results,Results,80,,,,,0.72,0.68,0.62,0.72,Business Admin,2024-02-01
+1.1,Leadership,Process,70,0.85,0.80,0.75,0.85,,,,,Engineering,2024-02-01
+1.2,Leadership,Process,50,0.82,0.78,0.72,0.82,,,,,Engineering,2024-02-01
+2.1,Strategy,Process,40,0.78,0.74,0.68,0.78,,,,,Engineering,2024-02-01
+2.2,Strategy,Process,45,0.80,0.76,0.70,0.80,,,,,Engineering,2024-02-01
+3.1,Customers,Process,40,0.75,0.72,0.66,0.75,,,,,Engineering,2024-02-01
+3.2,Customers,Process,45,0.78,0.74,0.68,0.78,,,,,Engineering,2024-02-01
+4.1,Measurement,Process,45,0.88,0.85,0.80,0.88,,,,,Engineering,2024-02-01
+4.2,Measurement,Process,45,0.86,0.82,0.78,0.86,,,,,Engineering,2024-02-01
+5.1,Workforce,Process,40,0.70,0.68,0.62,0.70,,,,,Engineering,2024-02-01
+5.2,Workforce,Process,45,0.72,0.70,0.64,0.72,,,,,Engineering,2024-02-01
+6.1,Operations,Process,50,0.82,0.80,0.75,0.82,,,,,Engineering,2024-02-01
+6.2,Operations,Process,50,0.84,0.82,0.76,0.84,,,,,Engineering,2024-02-01
+7.1,Results,Results,120,,,,,0.90,0.85,0.80,0.90,Engineering,2024-02-01
+7.2,Results,Results,80,,,,,0.88,0.82,0.78,0.88,Engineering,2024-02-01
+7.3,Results,Results,80,,,,,0.85,0.80,0.75,0.85,Engineering,2024-02-01
+7.4,Results,Results,80,,,,,0.82,0.78,0.72,0.82,Engineering,2024-02-01
