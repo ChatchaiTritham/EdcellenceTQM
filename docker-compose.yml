@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database
+  database:
+    image: postgres:13-alpine
+    container_name: adli-letci-db
+    environment:
+      POSTGRES_USER: tqm_admin
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
+      POSTGRES_DB: adli_letci_tqm
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema_simplified.sql:/docker-entrypoint-initdb.d/01_schema.sql
+    networks:
+      - tqm-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tqm_admin"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Python computational engine (API)
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: adli-letci-api
+    environment:
+      DATABASE_URL: postgresql://tqm_admin:${DB_PASSWORD:-changeme}@database:5432/adli_letci_tqm
+      FLASK_ENV: ${FLASK_ENV:-development}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/app/src
+      - ./config:/app/config
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - tqm-network
+    command: python -m flask run --host=0.0.0.0
+
+  # Dashboard (placeholder - would be React/Vue in full implementation)
+  dashboard:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    container_name: adli-letci-dashboard
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    networks:
+      - tqm-network
+    environment:
+      API_BASE_URL: http://api:5000
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  tqm-network:
+    driver: bridge
