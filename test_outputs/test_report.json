@@ -1,0 +1,170 @@
+{
+  "timestamp": "2026-02-14T22:01:59.914880",
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "pass_rate": 100.0,
+    "total_duration": 3.3009657859802246
+  },
+  "tests": [
+    {
+      "name": "ADLI Scoring (Equation 1)",
+      "passed": true,
+      "duration": "0.002s",
+      "error": null,
+      "details": {
+        "default_score": 72.0,
+        "custom_score": 71.25,
+        "validated_range": true
+      }
+    },
+    {
+      "name": "LeTCI Scoring (Equation 2)",
+      "passed": true,
+      "duration": "0.000s",
+      "error": null,
+      "details": {
+        "score": 81.25,
+        "expected": 81.25,
+        "validated_range": true
+      }
+    },
+    {
+      "name": "Category Aggregation (Equation 3)",
+      "passed": true,
+      "duration": "0.000s",
+      "error": null,
+      "details": {
+        "category_score": 75.35,
+        "expected": 75.35,
+        "point_weighted": true
+      }
+    },
+    {
+      "name": "Organizational Score (Equation 4)",
+      "passed": true,
+      "duration": "0.000s",
+      "error": null,
+      "details": {
+        "organizational_score": 77.6025,
+        "maturity_level": 4,
+        "maturity_label": "Integrated"
+      }
+    },
+    {
+      "name": "Integration Health Index (Equation 5)",
+      "passed": true,
+      "duration": "0.000s",
+      "error": null,
+      "details": {
+        "ihi": 0.7769642857142857,
+        "process_avg": 0.7414285714285713,
+        "results_avg": 0.8125
+      }
+    },
+    {
+      "name": "Gap Prioritization (Equation 6)",
+      "passed": true,
+      "duration": "0.000s",
+      "error": null,
+      "details": {
+        "priority_score": 1008.0,
+        "gap": 31.5,
+        "expected": 1008.0
+      }
+    },
+    {
+      "name": "ADLI Radar Chart (2D)",
+      "passed": true,
+      "duration": "0.463s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_adli_radar.png",
+        "file_size_kb": 129.7177734375
+      }
+    },
+    {
+      "name": "LeTCI Radar Chart (2D)",
+      "passed": true,
+      "duration": "0.363s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_letci_radar.png",
+        "file_size_kb": 129.005859375
+      }
+    },
+    {
+      "name": "Category Bar Chart (2D)",
+      "passed": true,
+      "duration": "0.435s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_category_bars.png"
+      }
+    },
+    {
+      "name": "IHI Trajectory Chart (2D)",
+      "passed": true,
+      "duration": "0.499s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_ihi_trajectory.png"
+      }
+    },
+    {
+      "name": "Gap Priority 3D Chart (3D)",
+      "passed": true,
+      "duration": "0.181s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_gap_priority_3d.png",
+        "chart_type": "3D Scatter"
+      }
+    },
+    {
+      "name": "Scalability Analysis Chart (2D)",
+      "passed": true,
+      "duration": "0.604s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_scalability.png"
+      }
+    },
+    {
+      "name": "Framework Comparison Heatmap (2D)",
+      "passed": true,
+      "duration": "0.423s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_heatmap.png"
+      }
+    },
+    {
+      "name": "Effect Sizes Chart (2D)",
+      "passed": true,
+      "duration": "0.313s",
+      "error": null,
+      "details": {
+        "chart_saved": "D:\\2026-Journal\\Rung\\GitHub\\EdcellenceTQM\\test_outputs\\test_effect_sizes.png"
+      }
+    },
+    {
+      "name": "Load Sample Assessment Data (CSV)",
+      "passed": true,
+      "duration": "0.010s",
+      "error": null,
+      "details": {
+        "rows": 48,
+        "departments": 3,
+        "items": 7
+      }
+    },
+    {
+      "name": "Load Benchmark Data (CSV)",
+      "passed": true,
+      "duration": "0.002s",
+      "error": null,
+      "details": {
+        "rows": 5,
+        "max_departments": 
