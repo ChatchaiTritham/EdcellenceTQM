@@ -92,7 +92,7 @@ Prioritizes improvement initiatives by combining performance gap, point value, a
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_ORG/EdcellenceTQM.git
+git clone https://github.com/ChatchaiTritham/EdcellenceTQM.git
 cd EdcellenceTQM
 
 # Install dependencies
@@ -356,7 +356,7 @@ If you use this framework in academic research, please cite:
   journal={Journal of King Saud University - Computer and Information Sciences},
   year={2026},
   volume={Submitted},
-  note={Code: \url{https://github.com/YOUR_ORG/EdcellenceTQM}}
+  note={Code: \url{https://github.com/ChatchaiTritham/EdcellenceTQM}}
 }
 ```
 
