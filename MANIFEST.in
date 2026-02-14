@@ -1,0 +1,26 @@
+# Include documentation
+include README.md
+include LICENSE
+include CLEAN_REPO_SUMMARY.txt
+
+# Include requirements
+include requirements.txt
+include pyproject.toml
+
+# Include data files
+recursive-include data *.csv *.json
+recursive-include scripts *.sql
+recursive-include figures/publication *.png *.pdf *.html *.md
+
+# Include examples
+recursive-include examples *.ipynb *.py
+recursive-include docs *.md *.rst
+
+# Exclude development files
+exclude .gitignore
+exclude *.bat
+exclude *.sh
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .DS_Store
+recursive-exclude test_outputs *

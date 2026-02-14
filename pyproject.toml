@@ -1,0 +1,137 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edcellence-tqm"
+version = "1.0.0"
+description = "Computational Framework for Educational Excellence Assessment"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Rungtiva Saosing", email = "rungtiva.s@mail.rmutt.ac.th"},
+    {name = "Chatchai Tritham", email = "chatchait66@nu.ac.th"},
+    {name = "Kanchit Kamlangkla", email = "kanchit.k@mail.rmutk.ac.th"},
+    {name = "Chattabhorn Tritham", email = "memodia@live.com"},
+]
+maintainers = [
+    {name = "Chatchai Tritham", email = "chatchait66@nu.ac.th"},
+]
+keywords = [
+    "education",
+    "quality-assessment",
+    "baldrige",
+    "tqm",
+    "edpex",
+    "adli",
+    "letci",
+    "higher-education",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0",
+    "plotly>=5.3.0",
+    "kaleido>=0.2.1",
+    "scipy>=1.7.0",
+    "Pillow>=8.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+    "isort>=5.10.0",
+]
+docs = [
+    "mkdocs>=1.3.0",
+    "mkdocs-material>=8.0.0",
+    "mkdocstrings[python]>=0.18.0",
+]
+database = [
+    "psycopg2-binary>=2.9.0",
+    "SQLAlchemy>=1.4.0",
+]
+notebooks = [
+    "jupyter>=1.0.0",
+    "jupyterlab>=3.0.0",
+    "ipywidgets>=7.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ChatchaiTritham/EdcellenceTQM"
+Documentation = "https://github.com/ChatchaiTritham/EdcellenceTQM#readme"
+Repository = "https://github.com/ChatchaiTritham/EdcellenceTQM.git"
+"Bug Tracker" = "https://github.com/ChatchaiTritham/EdcellenceTQM/issues"
+
+[project.scripts]
+edcellence-tqm = "edcellence_tqm.cli:main"
+
+[tool.setuptools]
+packages = ["edcellence_tqm", "edcellence_tqm.core", "edcellence_tqm.visualization", "edcellence_tqm.database", "edcellence_tqm.utils"]
+
+[tool.setuptools.package-data]
+edcellence_tqm = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=edcellence_tqm --cov-report=html --cov-report=term-missing"
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+strict_optional = true
